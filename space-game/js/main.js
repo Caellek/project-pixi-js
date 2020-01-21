@@ -60,7 +60,9 @@ PIXI.utils.sayHello();
         stage.addChild(bulletsManager);
 
         //Dodanie kolizji
-        collision = new S.Collision(ship, enemiesManager, bulletsManager);
+        //collision = new S.Collision(ship, enemiesManager, bulletsManager);
+         S.Collision.ShipEnemy(ship,enemiesManager);
+         S.Collision.BulletEnemy(bulletsManager,enemiesManager);
 
         //pętla animacji
         requestAnimationFrame(animate);
