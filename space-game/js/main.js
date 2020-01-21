@@ -42,7 +42,7 @@ PIXI.utils.sayHello();
         //Dodanie gwiazd
         bg2 = new S.Background(['img/starfield.png'], 1.5);
         stage.addChild(bg2);
-        bg2.alpha = 0.2;
+        bg2.alpha = 0.9;
 
         //dodanie sterowania
         S.Controls.start();
@@ -60,9 +60,9 @@ PIXI.utils.sayHello();
         stage.addChild(bulletsManager);
 
         //Dodanie kolizji
-        //collision = new S.Collision(ship, enemiesManager, bulletsManager);
-         S.Collision.ShipEnemy(ship,enemiesManager);
-         S.Collision.BulletEnemy(bulletsManager,enemiesManager);
+        //S.Collision(ship, enemiesManager, bulletsManager);
+        // S.Collision.ShipEnemy(ship,enemiesManager);
+        // S.Collision.BulletEnemy(bulletsManager,enemiesManager);
 
         //pętla animacji
         requestAnimationFrame(animate);
