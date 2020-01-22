@@ -31,6 +31,13 @@ PIXI.utils.sayHello();
     loader.add('img/bullet.png');
     loader.load(onAssetsLoaded);
     
+    // var b = new PIXI.extras.Bump();
+    // if(b.hit(ship,enemiesManager))
+    // {
+    //     console.log('Ok');
+    // }
+
+    console.log(ship instanceof Array);
 
     function onAssetsLoaded()
     {
@@ -61,11 +68,13 @@ PIXI.utils.sayHello();
 
         //Dodanie kolizji
         //S.Collision(ship, enemiesManager, bulletsManager);
-        // S.Collision.ShipEnemy(ship,enemiesManager);
+        //S.Collision.ShipEnemy(ship,enemiesManager);
         // S.Collision.BulletEnemy(bulletsManager,enemiesManager);
 
         //pętla animacji
         requestAnimationFrame(animate);
+
+
     }
 
     function animate()

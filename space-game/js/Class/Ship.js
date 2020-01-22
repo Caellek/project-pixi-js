@@ -7,7 +7,7 @@ S.Ship = function()
     //Wywołanie konstruktora
     PIXI.extras.MovieClip.call(this, textures);
 
-    this.position.x = 100;
+    this.position.x = 10;
     this.position.y = S.Config.height/2;
 
     //poruszanie statkiem
