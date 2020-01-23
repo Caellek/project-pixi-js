@@ -25,6 +25,7 @@ S.Ship = function()
     //Szybkość animacji statku
     this.animationSpeed = 0.2;
 
+    //ustalenie obszaru w którym statek może zostać trafiony
     this.hitArea = new S.Rectangle(this.position.x, this.position.y, this.width, this.height);
 
     //rozpoczęcie animacji
@@ -36,7 +37,7 @@ S.Ship.constructor = S.Ship;
 //Obiekt statku rozszerza obiekt PIXI MovieClip
 S.Ship.prototype = Object.create(PIXI.extras.MovieClip.prototype);
 
-//Utrata życia po oberwaniu od przeciwnika
+//Utrata życia po otrzymaniu obrażeń od przeciwnika
 S.Ship.prototype.hitEnemy = function()
 {
     this.life--;
@@ -83,6 +84,7 @@ S.Ship.prototype.updateTransform = function()
     this.speedX = S.Utils.boundary(this.speedX, -this.Max_Speed, this.Max_Speed);
     this.position.x += this.speedX;
 
+    //aktualizacja pozycji obszaru w którym można otrzymać obrażenia
     this.hitArea.x = this.position.x;
     this.hitArea.y = this.position.y;
 

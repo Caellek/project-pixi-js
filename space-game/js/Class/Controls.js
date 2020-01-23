@@ -29,7 +29,7 @@ S.Controls =
         document.addEventListener('keyup', this.keyUpHandler);
     },
 
-    //Wyłączenie listenerów, w wypadku kiedy, np przegramy
+    //Wyłączenie listenerów, w wypadku kiedy np przegramy
     stop: function()
     {
         document.removeEventListener('keydown', this.keyDownHandler);
