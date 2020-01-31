@@ -1,0 +1,14 @@
+Gra Space shooter
+
+Gra polega na lataniu statkiem kosmicznym i zestrzeliwaniu przeciwników.
+
+
+Aby móc uruchomić projekt należy zainstalować http-server, robimy to poleceniem 
+
+npm install http-server -g
+
+Aby go uruchomić, trzeba w folderze z projektem (tam gdzie jest plik index.html) wpisać polecenie
+
+npx http-server -c-1
+
+i skopiować adres z wiersza poleceń
