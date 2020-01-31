@@ -1,2 +1,0 @@
-https://github.com/kittykatattack/bump
-https://www.npmjs.com/package/pixi-plugin-bump?activeTab=readme
