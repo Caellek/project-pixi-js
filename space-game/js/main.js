@@ -68,8 +68,6 @@ PIXI.utils.sayHello();
 
         //Dodanie kolizji
         //S.Collision(ship, enemiesManager, bulletsManager);
-        //S.Collision.ShipEnemy(ship,enemiesManager);
-        // S.Collision.BulletEnemy(bulletsManager,enemiesManager);
 
         //pętla animacji
         requestAnimationFrame(animate);
