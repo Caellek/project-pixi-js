@@ -29,15 +29,7 @@ PIXI.utils.sayHello();
     loader.add("img/starfield.png");
     loader.add('img/enemy.json');
     loader.add('img/bullet.png');
-    loader.load(onAssetsLoaded);
-    
-    // var b = new PIXI.extras.Bump();
-    // if(b.hit(ship,enemiesManager))
-    // {
-    //     console.log('Ok');
-    // }
-
-    console.log(ship instanceof Array);
+    loader.load(onAssetsLoaded);  
 
     function onAssetsLoaded()
     {

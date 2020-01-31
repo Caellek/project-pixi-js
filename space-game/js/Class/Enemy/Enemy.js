@@ -5,7 +5,7 @@ S.Enemy = function()
 {
     var textures = S.SpriteSheetTextures.getArray('e_f','.png',6);
 
-    PIXI.extras.MovieClip.call(this, textures);
+    PIXI.extras.AnimatedSprite.call(this, textures);
 
     this.visible = false;
     this.spd = 1;
@@ -17,7 +17,7 @@ S.Enemy = function()
 };
 
 S.Enemy.constructor = S.Enemy;
-S.Enemy.prototype = Object.create(PIXI.extras.MovieClip.prototype);
+S.Enemy.prototype = Object.create(PIXI.extras.AnimatedSprite.prototype);
 
 S.Enemy.prototype.alloc = function()
 {
@@ -46,7 +46,7 @@ S.Enemy.prototype.updateTransform = function()
         this.hitArea.x = this.position.x;
         this.hitArea.y = this.position.y;
     }
-    PIXI.extras.MovieClip.prototype.updateTransform.call(this);
+    PIXI.extras.AnimatedSprite.prototype.updateTransform.call(this);
 };
 
 S.Enemy.prototype.touched = function(bullet)

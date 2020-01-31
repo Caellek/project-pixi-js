@@ -5,7 +5,7 @@ S.Ship = function()
     var textures = S.SpriteSheetTextures.getArray('f','.png', 4);
 
     //Wywołanie konstruktora
-    PIXI.extras.MovieClip.call(this, textures);
+    PIXI.extras.AnimatedSprite.call(this, textures);
 
     this.position.x = 10;
     this.position.y = S.Config.height/2;
@@ -34,8 +34,8 @@ S.Ship = function()
 
 S.Ship.constructor = S.Ship;
 
-//Obiekt statku rozszerza obiekt PIXI MovieClip
-S.Ship.prototype = Object.create(PIXI.extras.MovieClip.prototype);
+//Obiekt statku rozszerza obiekt PIXI AnimatedSprite
+S.Ship.prototype = Object.create(PIXI.extras.AnimatedSprite.prototype);
 
 //Utrata życia po otrzymaniu obrażeń od przeciwnika
 S.Ship.prototype.hitEnemy = function()
@@ -92,5 +92,5 @@ S.Ship.prototype.updateTransform = function()
     this.position.y = S.Utils.boundary(this.position.y, this.Min_Y, this.Max_Y);
     this.position.x = S.Utils.boundary(this.position.x, this.Min_X, this.Max_X);
 
-    PIXI.extras.MovieClip.prototype.updateTransform.call(this);
+    PIXI.extras.AnimatedSprite.prototype.updateTransform.call(this);
 }
