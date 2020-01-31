@@ -1,6 +1,6 @@
 S.Collision = function(ship, enemiesManager, bulletsManager)
 {
-    PIXI.extras.Bump.call(this);
+    PIXI.EventTarget.call(this);
 
 
     this.ship = ship;

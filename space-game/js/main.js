@@ -82,5 +82,6 @@ PIXI.utils.sayHello();
         requestAnimationFrame(animate);
 
         renderer.render(stage);
+        //collision.checkCollision();
     }
 })();
